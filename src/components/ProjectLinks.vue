@@ -1,43 +1,65 @@
 <template>
-  <div class="hello">
+  <div class="links">
     <h1>{{ msg }}</h1>
-    <p>
-      Welcome to my home page. In case you are interested in one of my projects please click the links below.
-    </p>
+    <p>Welcome to my home page. In case you are interested in one of my projects please click the links below.</p>
     <h3>My projects:</h3>
-    <ul>
-      <li>
-        <a href="https://stringtools.netlify.com">String Tools (Vue)</a>
-      </li>
-      <li>
-        <a href="https://avatar-generator.netlify.com">Avatar Generator (Vue) - Nov 2018</a>
-      </li>
-      <li>
-        <a href="https://webxslt.netlify.com/">Web XSLT processor (React+Bootstrap) - Jan 2019</a>
-      </li>
-      <li>
-        <a href="https://flight-tracker.netlify.com/">Flight Tracker (Vue+OpenSky api) - Feb 2019</a>
-      </li>
-    </ul>
+    <a v-for="link in links" :key="link.url" :href="link.url">
+      <div class="link">{{link.name}}</div>
+    </a>
   </div>
 </template>
 
 <script>
+const links = [
+  {
+    name: 'String Tools (Vue)',
+    url: 'https://stringtools.netlify.com',
+  },
+  {
+    name: 'Avatar Generator (Vue)',
+    url: 'https://avatar-generator.netlify.com/',
+  },
+  {
+    name: 'Web XSLT Processor (React)',
+    url: 'https://webxslt.netlify.com/',
+  },
+  {
+    name: 'Flight Tracker (Vue + GMaps)',
+    url: 'https://flight-tracker.netlify.com/',
+  },
+];
+
 export default {
+  data() {
+    return {
+      links,
+    };
+  },
 };
 </script>
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 10px 0;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  margin: 0 10px;
+.links {
+  width: 70%;
 }
 a {
-  color: #42b983;
+  text-decoration: none;
+}
+
+.links .link {
+  margin: 2px;
+  padding: 10px 25px;
+  width: 300px;
+  color: #fff;
+  /* background-color: #61DAFB; */
+  background-color: rgb(66, 131, 185);
+  transition: 0.3s;
+}
+
+.links .link:hover {
+  background-color: rgba(66, 131, 185, 0.5);
+  /* background-blend-mode: darken; */
 }
 </style>

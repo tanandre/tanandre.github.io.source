@@ -19,6 +19,10 @@ const links = [
     url: 'https://webmemori.netlify.app/',
   },
   {
+    name: 'Memori Game (Android)',
+    url: 'https://play.google.com/store/apps/details?id=nl.tan.memory',
+  },
+  {
     name: 'String Tools (Vue)',
     url: 'https://stringtools.netlify.app/',
   },

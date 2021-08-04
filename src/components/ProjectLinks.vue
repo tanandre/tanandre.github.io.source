@@ -1,6 +1,5 @@
 <template>
   <div class="links">
-    <h1>{{ msg }}</h1>
     <p>Welcome to my home page. In case you are interested in one of my projects please click the links below.</p>
     <h3>My projects:</h3>
     <a v-for="link in links" :key="link.url" :href="link.url">
@@ -12,20 +11,28 @@
 <script>
 const links = [
   {
-    name: 'String Tools (Vue)',
-    url: 'https://stringtools.netlify.com',
+    name: 'Planning Poker (Vue+Socket.io)',
+    url: 'http://planningpoker-bb.herokuapp.com/',
   },
   {
-    name: 'Avatar Generator (Vue)',
-    url: 'https://avatar-generator.netlify.com/',
+    name: 'Memori Game (Vue)',
+    url: 'https://webmemori.netlify.app/',
+  },
+  {
+    name: 'String Tools (Vue)',
+    url: 'https://stringtools.netlify.app/',
+  },
+  {
+    name: 'Avatar Generator (Vue+SVG)',
+    url: 'https://avatar-generator.netlify.app/',
   },
   {
     name: 'Web XSLT Processor (React)',
-    url: 'https://webxslt.netlify.com/',
+    url: 'https://webxslt.netlify.app/',
   },
   {
     name: 'Flight Tracker (Vue + GMaps)',
-    url: 'https://flight-tracker.netlify.com/',
+    url: 'https://flight-tracker.netlify.app/',
   },
 ];
 

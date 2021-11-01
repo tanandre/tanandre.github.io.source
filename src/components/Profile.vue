@@ -7,6 +7,7 @@
         v-for="link in links"
         :key="link.url"
         :href="link.url"
+        :title="link.url"
         :class="`socicon socicon-${link.socicon}`"
       ></a>
     </div>
@@ -23,7 +24,7 @@ const links = [
     url: 'https://github.com/tanandre',
   },
   {
-    socicon: 'gitlab',
+    socicon: 'firefox',
     url: 'https://gitlab.com/tanneman1',
   },
   {

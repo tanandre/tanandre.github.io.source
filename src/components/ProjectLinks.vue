@@ -69,17 +69,20 @@ export default {
 </script>
 <style scoped>
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
   padding: 20px;
   color: rgba(255,255,255, 0.8);
-  background-color: rgb(66, 131, 185);
+  /* background-color: rgb(66, 131, 185); */
+background-color: rgb(68, 75, 84);
   margin: 5px;
+border-top: 4px solid rgb(66, 131, 185);
+  /* border: 1px solid #000; */
 }
 
 .card:hover {
   filter: brightness(120%);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8); */
 }
 
 .card .header {
@@ -89,6 +92,10 @@ export default {
 
 .card .actions {
 
+}
+
+.description {
+  font-size: 0.9em;
 }
 
 .container {

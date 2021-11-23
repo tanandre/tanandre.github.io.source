@@ -25,6 +25,7 @@ export default {
 .content {
   grid-area: content;
   padding: 10px 20px;
+  overflow: auto;
 }
 .main-nav {
   grid-area: nav;
@@ -32,6 +33,8 @@ export default {
   /* height: 100vh; */
 }
 .wrapper {
+  /* height: 100vh; */
+  /* overflow: hidden; */
   display: grid;
   grid-gap: 0px;
   grid-template-areas:
@@ -39,22 +42,13 @@ export default {
     "content";
 }
 
-@media (min-width: 500px) {
-  .wrapper {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-      "nav  content";
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 @media (min-width: 700px) {
   .wrapper {
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "nav    content";
+  }
+  nav, .wrapper {
+    height: 100vh;
   }
   nav ul {
     flex-direction: column;

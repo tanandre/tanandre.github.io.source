@@ -15,11 +15,6 @@
         </div>
       </div>
     </div>
-    <!-- <a v-for="link in links" :key="link.url" :href="link.url">
-      <div class="link">{{link.name}}
-        <p>{{link.summary}}</p>
-      </div>
-    </a> -->
   </div>
 </template>
 
@@ -73,29 +68,6 @@ export default {
 };
 </script>
 <style scoped>
-h3 {
-  margin: 10px 0;
-}
-/* .links {
-  width: 70%;
-} */
-a {
-  text-decoration: none;
-}
-
-.links .link {
-  margin: 2px;
-  padding: 10px 25px;
-  width: 300px;
-  color: #fff;
-  background-color: rgb(66, 131, 185);
-  transition: 0.3s;
-}
-
-.links .link:hover {
-  background-color: rgba(66, 131, 185, 0.5);
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;

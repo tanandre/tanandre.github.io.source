@@ -72,26 +72,19 @@ export default {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
   padding: 20px;
-  color: rgba(255,255,255, 0.8);
-  /* background-color: rgb(66, 131, 185); */
-background-color: rgb(68, 75, 84);
   margin: 5px;
-border-top: 4px solid rgb(66, 131, 185);
-  /* border: 1px solid #000; */
+  border-top: 4px solid var(--colorl2);
+  background-color: var(--colord1);
 }
 
 .card:hover {
-  filter: brightness(120%);
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8); */
+  filter: brightness(102%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
 }
 
 .card .header {
   font-weight: bold;
-  color: rgb(255,255,255);
-}
-
-.card .actions {
-
+  color: var(--colorf2);
 }
 
 .description {
@@ -100,7 +93,6 @@ border-top: 4px solid rgb(66, 131, 185);
 
 .container {
   display: grid;
-  /* grid: 150px / auto auto; */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 5px;
 }

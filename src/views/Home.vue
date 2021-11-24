@@ -29,12 +29,9 @@ export default {
 }
 .main-nav {
   grid-area: nav;
-  background-color: rgb(68, 75, 84);
-  /* height: 100vh; */
+  background-color: var(--colord1);
 }
 .wrapper {
-  /* height: 100vh; */
-  /* overflow: hidden; */
   display: grid;
   grid-gap: 0px;
   grid-template-areas:

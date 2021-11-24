@@ -6,7 +6,7 @@
 
       <p class="description">{{ link.summary }}</p>
       <div class="actions">
-        <a :href="link.url">demo</a>
+        <a :href="link.url" class="button" alt="demo" title="demo">DEMO</a>
       </div>
     </div>
   </div>
@@ -55,11 +55,22 @@ export default {
   margin: 10px 0;
 }
 
+.actions {
+  margin-top: 10px;
+}
+
 
 .details {
   display: flex;
   flex-direction: column;
   padding: 20px;
   flex: 1;
+}
+
+.button {
+  text-decoration: none;
+  /* font-weight: bold; */
+  color: rgb(255, 152, 0);
+  font-stretch: 100%;
 }
 </style>

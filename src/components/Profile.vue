@@ -35,10 +35,10 @@ const links = [
     socicon: 'twitter',
     url: 'https://twitter.com/tan_andre',
   },
-  {
-    socicon: 'android',
-    url: 'https://play.google.com/store/apps/developer?id=Andre+Tan',
-  },
+  // {
+  //   socicon: 'android',
+  //   url: 'https://play.google.com/store/apps/developer?id=Andre+Tan',
+  // },
 ];
 
 export default {

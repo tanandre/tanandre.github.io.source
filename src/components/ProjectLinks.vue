@@ -80,17 +80,21 @@ export default {
 <style scoped>
 .screenshot {
   object-fit: cover;
-  height: 300px;
+  height: 200px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   margin: 5px;
+  border-radius: 4px;
+  /* border: 1px solid #777; */
   /* border-top: 4px solid var(--colorl2); */
-  background-color: var(--colord1);
+  background-color: var(--colord3);
 }
 
 .card:hover {
@@ -112,7 +116,7 @@ export default {
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 20px;
 }
 
 .details {

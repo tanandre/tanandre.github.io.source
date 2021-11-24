@@ -6,22 +6,14 @@
     </p>
     <h3>My projects:</h3>
     <div class="container">
-      <div class="card" v-for="link in links" :key="link.url" :href="link.url">
-        <img alt="screenshot" :src="'./img/' + link.img" class="screenshot" />
-        <div class="details">
-          <div class="header">{{ link.name }}</div>
-
-          <p class="description">{{ link.summary }}</p>
-          <div class="actions">
-            <a :href="link.url">demo</a>
-          </div>
-        </div>
-      </div>
+      <Card :link="link" v-for="link in links" :key="link.url" />
     </div>
   </div>
 </template>
 
 <script>
+import Card from './Card.vue';
+
 const links = [
   {
     name: 'Planning Poker (Vue+Socket.io)',
@@ -70,6 +62,7 @@ const links = [
 ];
 
 export default {
+  components: { Card },
   data() {
     return {
       links,
@@ -78,51 +71,9 @@ export default {
 };
 </script>
 <style scoped>
-.screenshot {
-  object-fit: cover;
-  height: 200px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-  margin: 5px;
-  border-radius: 4px;
-  /* border: 1px solid #777; */
-  /* border-top: 4px solid var(--colorl2); */
-  background-color: var(--colord3);
-}
-
-.card:hover {
-  filter: brightness(108%);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
-}
-
-.card .header {
-  font-weight: bold;
-  color: var(--colorf2);
-}
-
-.description {
-  font-size: 0.9em;
-  flex: 1;
-  margin: 10px 0;
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  flex: 1;
 }
 </style>

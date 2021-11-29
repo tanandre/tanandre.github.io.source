@@ -15,6 +15,13 @@
 import Card from './Card.vue';
 
 const links = [
+    {
+    name: 'FlameOn (Angular+FHIR)',
+    img: 'flameon.png',
+    summary:
+      'A simple FHIR patient search client that can query public FHIR endpoints',
+    url: 'https://flameon.netlify.app',
+  },
   {
     name: 'PhotoIndex (Vue+PHP)',
     img: 'photoindex.png',

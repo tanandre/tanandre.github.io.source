@@ -19,9 +19,7 @@ export default {
 </script>
 <style scoped>
 img.screenshot {
-  /* -webkit-filter: grayscale(100%); */
- filter: saturate(80%);
-  opacity: 0.5;
+  opacity: 0.8;
   object-fit: cover;
   transition: 0.3s;
   height: 200px;
@@ -36,8 +34,6 @@ img.screenshot {
   transition: 0.3s;
   margin: 5px;
   border-radius: 4px;
-  /* border: 1px solid #777; */
-  /* border-top: 4px solid var(--colorl2); */
   background-color: var(--colord3);
 }
 
@@ -47,8 +43,6 @@ img.screenshot {
 }
 
 .card:hover img.screenshot {
-    /* -webkit-filter: grayscale(0); */
- filter: grayscale(0);
   opacity: 1;
 }
 

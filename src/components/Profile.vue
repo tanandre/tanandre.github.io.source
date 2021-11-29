@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h3>andretan.nl</h3>
-    <img alt="My avatar" class="avatar" src="../assets/avatar.svg">
+    <!-- <img alt="My avatar" class="avatar" src="../assets/avatar.svg"> -->
     <div class="icons">
       <a
         v-for="link in links"

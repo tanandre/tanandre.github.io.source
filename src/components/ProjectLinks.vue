@@ -16,24 +16,24 @@ import Card from './Card.vue';
 
 const links = [
   {
-    name: 'Planning Poker (Vue+Socket.io)',
-    img: 'planningpoker.png',
-    summary:
-      'Use with my team to do sprint planning. WebSockets are used to sync the data between the different browser sessions',
-    url: 'http://planningpoker-bb.herokuapp.com/',
-  },
-  {
-    name: 'Memori Game (Vue)',
-    img: 'webmemori.png',
-    summary: 'A simple memory game to entertain my kids with.',
-    url: 'https://webmemori.netlify.app/',
-  },
-  {
     name: 'PhotoIndex (Vue+PHP)',
     img: 'photoindex.png',
     summary:
       'A Synology photo album app for personal use. Allows for easy searching/tagging of photos and using routing to determine state which results in proper backbutton support. Note the demo uses a mock back-end and only the query functionality works,',
     url: 'https://photoindex-demo.netlify.app',
+  },
+  {
+    name: 'Planning Poker (Vue+Socket.io)',
+    img: 'planningpoker1.png',
+    summary:
+      'I use this with my team for sprint planning poker. WebSockets are used to sync the data between the different browser sessions',
+    url: 'http://planningpoker-bb.herokuapp.com/',
+  },
+  {
+    name: 'Memori Game (Vue)',
+    img: 'webmemori1.png',
+    summary: 'A simple memory game to entertain my kids.',
+    url: 'https://webmemori.netlify.app/',
   },
   {
     name: 'String Tools (Vue)',
@@ -44,7 +44,7 @@ const links = [
   {
     name: 'Avatar Generator (Vue+SVG)',
     img: 'avatargen.png',
-    summary: 'Creating random avatars for a game I want to build',
+    summary: 'Creating random avatars using SVG paths for a future game I want to build. With router and backbutton support',
     url: 'https://avatar-generator.netlify.app/',
   },
   {

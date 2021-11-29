@@ -13,15 +13,17 @@
 </template>
 
 <script>
-
-
 export default {
   props: ['link'],
 };
 </script>
 <style scoped>
-.screenshot {
+img.screenshot {
+  /* -webkit-filter: grayscale(100%); */
+ filter: saturate(80%);
+  opacity: 0.5;
   object-fit: cover;
+  transition: 0.3s;
   height: 200px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -44,6 +46,12 @@ export default {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
 }
 
+.card:hover img.screenshot {
+    /* -webkit-filter: grayscale(0); */
+ filter: grayscale(0);
+  opacity: 1;
+}
+
 .card .header {
   font-weight: bold;
   color: var(--colorf2);
@@ -58,7 +66,6 @@ export default {
 .actions {
   margin-top: 10px;
 }
-
 
 .details {
   display: flex;
